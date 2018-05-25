@@ -1,18 +1,95 @@
-h1, h2, h3, h4, p, div, ul, li {
+body, h1, h2, h3, h4, p, div, ul, li {
 margin: 0;
 padding: 0;
 border: 0;
 font-size: 100%;
 font: inherit;
-font-family: "Helvetica Neue", sans-serif, serif;
+}
+body {
+  background-color: skyblue;
+}
+h1, h2, h3, p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif, serif;
+  text-align: center;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4em;
   font-weight: bold;
-  text-align: center;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3em;
+  font-weight: 1;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif, serif;
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
+.header {
+  background-color: #000;
+  width: 100%;
+  margin: 0px;
+}
+.header h1, h2 {
+  color: #EEE;
+padding: 5px 0;
+}
+.tagline, .skills, .contact {
+  padding: 20px 0;
+  width: 700px;
+  margin: 0 auto;
+}
+.tagline img {
+  height: 200px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+}
+.tagline h3, .skills h3, .contact h3 {
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+.contact p {
+  margin-bottom: 10px;
+}
+.skills ul {
   text-align: center;
+  margin-bottom: 20px;
+}
+.skills li {
+  display: inline;
+  background-color: #000;
+  color:#EEE;
+  padding: 5px;
+  margin: 10px 4px;
+  border-radius: 20%;
+  cursor: none;
+}
+.skills li:hover {
+  background-color: #EEE;
+  color:#000;
+}
+.skills h4 {
+  text-decoration: underline;
+  margin-bottom:20px;
+  text-align: center;
+}
+.contact a {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+.contact ul {
+  text-align: center;
+  list-style-type: none;
+}
+.contact a:hover {
+  opacity:0.6;
 }
